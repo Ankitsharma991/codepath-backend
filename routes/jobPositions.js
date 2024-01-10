@@ -2,6 +2,10 @@ const express = require("express");
 const router = express.Router();
 const JobPosition = require("../models/JobPositions");
 
+router.get("/hello", async () => {
+  console.log("Hello, it's successfully deployed");
+});
+
 
 router.post("/create", async (req, res) => {
   try {
